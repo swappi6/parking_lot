@@ -1,10 +1,10 @@
-package parking_lot
+package parking_lot.service
 
 import parking_lot.models.ErrorLike.{ParkingLotAlreadyCreatedError, ParkingLotNotCreated}
 import parking_lot.models.ParkingLotResponseDTOs.ParkingLotCreationSuccess
 import parking_lot.models._
 
-object ParkingLotManager {
+private[service] object ParkingLotManager {
   private var parkingLotOpt: Option[ParkingLot] = None
 
   def apply(slots: Int): ResponseLike[ParkingLotCreationSuccess] = synchronized {

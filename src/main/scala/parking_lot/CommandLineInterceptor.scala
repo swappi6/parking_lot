@@ -3,6 +3,7 @@ package parking_lot
 import parking_lot.models.CommandType._
 import parking_lot.models.ErrorLike.{EmptyCommandError, MissingInfoError, UnknownCommandError}
 import parking_lot.models._
+import parking_lot.service.ParkingLotService
 
 import scala.util.Try
 

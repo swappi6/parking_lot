@@ -1,4 +1,4 @@
-package parking_lot
+package parking_lot.service
 
 import com.google.inject.{ImplementedBy, Singleton}
 import parking_lot.models.ErrorLike.VehicleNotFound

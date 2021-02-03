@@ -3,6 +3,7 @@ package parking_lot
 import org.scalatest.FunSuite
 import parking_lot.models.ParkingLotResponseDTOs.{ParkedVehicleSlotResponse, ParkedVehicleSlotsResponse, ParkedVehiclesResponse, ParkingLotStatus}
 import parking_lot.models.{Color, FailureResponse, SuccessResponse}
+import parking_lot.service.{ParkingLotService, ParkingLotServiceImpl}
 
 class ParkingLotTest extends FunSuite with CommandLineInterceptor {
 

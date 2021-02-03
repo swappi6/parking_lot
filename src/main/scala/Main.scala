@@ -1,5 +1,5 @@
-import parking_lot.models.ResponseType.Success
-import parking_lot.{CommandLineInterceptor, FileProcessor, ParkingLotService, ParkingLotServiceImpl}
+import parking_lot.service.{ParkingLotService, ParkingLotServiceImpl}
+import parking_lot.{CommandLineInterceptor, FileProcessor}
 
 import scala.io.StdIn._
 import scala.util.{Failure, Success, Try}
