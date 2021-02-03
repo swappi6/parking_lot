@@ -1,7 +1,8 @@
+import parking_lot.models.ResponseType.Success
 import parking_lot.{CommandLineInterceptor, FileProcessor, ParkingLotService, ParkingLotServiceImpl}
 
 import scala.io.StdIn._
-import scala.util.Try
+import scala.util.{Failure, Success, Try}
 
 object Main extends CommandLineInterceptor with FileProcessor {
   def main(args: Array[String]): Unit = {
@@ -24,11 +25,13 @@ object Main extends CommandLineInterceptor with FileProcessor {
               case Some(fileName) =>
                 WithFileContent(fileName) { fileContent =>
                   fileContent.foreach(CommandProcessor(_).print())
+                } match {
+                  case Success(_) => parkingLotService.doCleanup()
+                  case Failure(_) => println("Sorry, Please enter a valid file with correct absolute path")
                 }
-                parkingLotService.doCleanup()
               case None => println("Sorry, Please enter a valid file name")
             }
-          case unknown => println("Sorry, Please enter a valid input type: command/file")
+          case _ => println("Sorry, Please enter a valid input type: command/file")
         }
       case None => println("Sorry, Please enter the input type: command/file")
     }
