@@ -34,5 +34,5 @@ object Main extends CommandLineInterceptor with FileProcessor {
     }
   }
 
-  override def parkingLotService: ParkingLotService = new ParkingLotServiceImpl()
+  override val parkingLotService: ParkingLotService = new ParkingLotServiceImpl()
 }

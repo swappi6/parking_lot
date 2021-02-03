@@ -1,8 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/devesh/Desktop/Repo/parking-lot/src/main/scala/parking_lot/models/ParkingLotDTOs.scala:18:6: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : scala.collection.mutable.IndexedSeq[parking_lot.models.EmptyParkingSlot][0m
-[0m[[0m[31merror[0m] [0m[0m required: scala.collection.mutable.IndexedSeq[parking_lot.models.ParkingSlotLike][0m
-[0m[[0m[31merror[0m] [0m[0mNote: parking_lot.models.EmptyParkingSlot <: parking_lot.models.ParkingSlotLike, but trait IndexedSeq is invariant in type A.[0m
-[0m[[0m[31merror[0m] [0m[0mYou may wish to investigate a wildcard type such as `_ <: parking_lot.models.ParkingSlotLike`. (SLS 3.2.10)[0m
-[0m[[0m[31merror[0m] [0m[0m    (parkingSlots, emptySlots)[0m
-[0m[[0m[31merror[0m] [0m[0m     ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
