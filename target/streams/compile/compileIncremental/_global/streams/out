@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 82 products, 10 sources, 3 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/parking_lot/models/CommandType.scala, ${BASE}/src/main/scala/parking_lot/CommandLineInterceptor.scala, ${BASE}/src/main/scala/parking_lot/models/ParkingLotDTOs.scala, ${BASE}/src/main/scala/parking_lot/ParkingLotManager.scala, ${BASE}/src/main/scala/parking_lot/ParkingLotService.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/parking_lot/models/ParkingLotResponseDTOs.scala, ${BASE}/src/main/scala/parking_lot/FileProcessor.scala, ${BASE}/src/main/scala/parking_lot/ParkingLotHelper.scala, ${BASE}/src/main/scala/parking_lot/models/ResponseLike.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
